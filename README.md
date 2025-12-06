@@ -47,7 +47,29 @@ classDiagram
 ---
 
 ## 2. FLOWCHART PROGRAM
+```mermaid
+flowchart TD
+    A([Mulai]) --> B{Pilih Menu}
 
+    B -->|Tambah Data| C[/Input Data Mahasiswa/]
+    C --> D[Tambah ke Daftar]
+    D --> B
+
+    B -->|Tampilkan Data| E[Cetak Seluruh Data]
+    E --> B
+
+    B -->|Ubah Data| F[/Input NIM + Data Baru/]
+    F --> G[Update Data]
+    G --> B
+
+    B -->|Hapus Data| H[/Input NIM/]
+    H --> I[Hapus dari Daftar]
+    I --> B
+
+    B -->|Keluar| J([Selesai])
+```
+
+---
 
 ## 3. Penjelasan Program
 
